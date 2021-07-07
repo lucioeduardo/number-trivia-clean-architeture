@@ -27,10 +27,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   equatable: ^2.0.3
   flutter_bloc: ^7.0.1
-  fpdart: ^0.0.5
+  fpdart: ^0.0.6
   get_it: ^7.1.3
   http: ^0.13.3
   shared_preferences: ^2.0.6
+  bloc_test: ^8.0.2
 
 dev_dependencies:
   flutter_test:
