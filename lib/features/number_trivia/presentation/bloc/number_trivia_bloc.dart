@@ -1,17 +1,16 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
 import 'package:fpdart/fpdart.dart';
+
 import '../../../../core/error/failure.dart';
 import '../../../../core/usecase/usecase.dart';
 import '../../../../core/util/input_converter.dart';
 import '../../domain/entities/number_trivia.dart';
 import '../../domain/usecases/get_concrete_number_trivia.dart';
 import '../../domain/usecases/get_random_number_trivia.dart';
-
-part 'number_trivia_event.dart';
-part 'number_trivia_state.dart';
+import 'number_trivia_event.dart';
+import 'number_trivia_state.dart';
 
 const String serverFailureMessage = 'Server Failure';
 const String cacheFailureMessage = 'Cache Failure';

@@ -1,4 +1,5 @@
 import 'package:fpdart/fpdart.dart';
+
 import '../error/failure.dart';
 
 class InputConverter {

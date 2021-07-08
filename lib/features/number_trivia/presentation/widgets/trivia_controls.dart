@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:number_trivia_clean_architecture/features/number_trivia/presentation/bloc/number_trivia_bloc.dart';
+import '../bloc/number_trivia_bloc.dart';
+import '../bloc/number_trivia_event.dart';
 
 class TriviaControls extends StatefulWidget {
   const TriviaControls({

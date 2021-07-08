@@ -1,29 +1,12 @@
-part of 'number_trivia_bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../domain/entities/number_trivia.dart';
 
-abstract class NumberTriviaState extends Equatable {
-  const NumberTriviaState();
-  
-  @override
-  List<Object> get props => [];
-}
+part 'number_trivia_state.freezed.dart';
 
-class Empty extends NumberTriviaState {}
-class Loading extends NumberTriviaState {}
-
-class Loaded extends NumberTriviaState {  
-  final NumberTrivia trivia;
-
-  Loaded({required this.trivia});
-
-  @override
-  List<Object> get props => [trivia];
-}
-
-class Error extends NumberTriviaState {  
-  final String message;
-
-  Error({required this.message});
-
-  @override
-  List<Object> get props => [message];
+@freezed
+abstract class NumberTriviaState with _$NumberTriviaState{
+  const factory NumberTriviaState.empty() = Empty;
+  const factory NumberTriviaState.loading() = Loading;
+  const factory NumberTriviaState.loaded({required NumberTrivia trivia}) = Loaded;
+  const factory NumberTriviaState.error({required String message}) = Error;
 }

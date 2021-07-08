@@ -32,11 +32,15 @@ dependencies:
   http: ^0.13.3
   shared_preferences: ^2.0.6
   bloc_test: ^8.0.2
+  freezed_annotation: ^0.14.2
+  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   mocktail: ^0.1.4
+  freezed: ^0.14.2
+  build_runner: 
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
